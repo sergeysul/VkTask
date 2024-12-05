@@ -7,23 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B93636E22D006DCC00FF055C /* RepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93636E12D006DCC00FF055C /* RepositoriesPresenter.swift */; };
+		B93636E52D00966F00FF055C /* RepositoriesStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93636E42D00966F00FF055C /* RepositoriesStorage.swift */; };
 		B95226FD2CFD300100140055 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95226FC2CFD300100140055 /* AppDelegate.swift */; };
 		B95226FF2CFD300100140055 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95226FE2CFD300100140055 /* SceneDelegate.swift */; };
-		B95227012CFD300100140055 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95227002CFD300100140055 /* ViewController.swift */; };
-		B95227042CFD300100140055 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B95227022CFD300100140055 /* Main.storyboard */; };
+		B95227012CFD300100140055 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95227002CFD300100140055 /* RepositoriesViewController.swift */; };
 		B95227062CFD300300140055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B95227052CFD300300140055 /* Assets.xcassets */; };
 		B95227092CFD300300140055 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B95227072CFD300300140055 /* LaunchScreen.storyboard */; };
+		B95227112CFD334E00140055 /* GitHubLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95227102CFD334E00140055 /* GitHubLoader.swift */; };
+		B95227132CFD336700140055 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95227122CFD336700140055 /* NetworkClient.swift */; };
+		B95227172CFD33F900140055 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95227162CFD33F900140055 /* Owner.swift */; };
+		B95227192CFD344000140055 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B95227182CFD344000140055 /* Repository.swift */; };
+		B952271C2CFD346F00140055 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B952271B2CFD346F00140055 /* SearchResult.swift */; };
+		B952271E2CFD3A4000140055 /* RepositoriesViewController + Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B952271D2CFD3A4000140055 /* RepositoriesViewController + Cell.swift */; };
+		B966C7682D01CA38005EA5A2 /* VkTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B966C7672D01CA38005EA5A2 /* VkTaskUITestsLaunchTests.swift */; };
+		B979769F2D01A059008A25DC /* RepositoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B979769E2D01A059008A25DC /* RepositoriesInteractor.swift */; };
+		B97976A12D01A108008A25DC /* RepositoriesBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B97976A02D01A108008A25DC /* RepositoriesBuilder.swift */; };
+		B9D96A382D01C9800000DE13 /* VkTaskLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D96A372D01C9800000DE13 /* VkTaskLoaderTests.swift */; };
+		B9ECBA3A2D01CB230028BF4B /* VkTaskRepositoriesViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ECBA392D01CB230028BF4B /* VkTaskRepositoriesViewControllerTest.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B966C7692D01CA38005EA5A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B95226F12CFD300100140055 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B95226F82CFD300100140055;
+			remoteInfo = VkTask;
+		};
+		B9D96A392D01C9800000DE13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B95226F12CFD300100140055 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B95226F82CFD300100140055;
+			remoteInfo = VkTask;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		B93636E12D006DCC00FF055C /* RepositoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPresenter.swift; sourceTree = "<group>"; };
+		B93636E42D00966F00FF055C /* RepositoriesStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesStorage.swift; sourceTree = "<group>"; };
 		B95226F92CFD300100140055 /* VkTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VkTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B95226FC2CFD300100140055 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B95226FE2CFD300100140055 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B95227002CFD300100140055 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B95227032CFD300100140055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B95227002CFD300100140055 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
 		B95227052CFD300300140055 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B95227082CFD300300140055 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B952270A2CFD300300140055 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B95227102CFD334E00140055 /* GitHubLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubLoader.swift; sourceTree = "<group>"; };
+		B95227122CFD336700140055 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		B95227162CFD33F900140055 /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		B95227182CFD344000140055 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		B952271B2CFD346F00140055 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		B952271D2CFD3A4000140055 /* RepositoriesViewController + Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RepositoriesViewController + Cell.swift"; sourceTree = "<group>"; };
+		B966C7632D01CA38005EA5A2 /* VkTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B966C7672D01CA38005EA5A2 /* VkTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B979769E2D01A059008A25DC /* RepositoriesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesInteractor.swift; sourceTree = "<group>"; };
+		B97976A02D01A108008A25DC /* RepositoriesBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesBuilder.swift; sourceTree = "<group>"; };
+		B9D96A352D01C9800000DE13 /* VkTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VkTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D96A372D01C9800000DE13 /* VkTaskLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkTaskLoaderTests.swift; sourceTree = "<group>"; };
+		B9ECBA392D01CB230028BF4B /* VkTaskRepositoriesViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VkTaskRepositoriesViewControllerTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,13 +77,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B966C7602D01CA38005EA5A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D96A322D01C9800000DE13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B93636DE2D006B9400FF055C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B95227002CFD300100140055 /* RepositoriesViewController.swift */,
+				B952271D2CFD3A4000140055 /* RepositoriesViewController + Cell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B93636E02D006D8300FF055C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B93636E12D006DCC00FF055C /* RepositoriesPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B93636E62D00967600FF055C /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				B93636E42D00966F00FF055C /* RepositoriesStorage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		B95226F02CFD300100140055 = {
 			isa = PBXGroup;
 			children = (
 				B95226FB2CFD300100140055 /* VkTask */,
+				B9D96A362D01C9800000DE13 /* VkTaskTests */,
+				B966C7642D01CA38005EA5A2 /* VkTaskUITests */,
 				B95226FA2CFD300100140055 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				B95226F92CFD300100140055 /* VkTask.app */,
+				B9D96A352D01C9800000DE13 /* VkTaskTests.xctest */,
+				B966C7632D01CA38005EA5A2 /* VkTaskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,13 +144,70 @@
 			children = (
 				B95226FC2CFD300100140055 /* AppDelegate.swift */,
 				B95226FE2CFD300100140055 /* SceneDelegate.swift */,
-				B95227002CFD300100140055 /* ViewController.swift */,
-				B95227022CFD300100140055 /* Main.storyboard */,
+				B97976A22D01AA8F008A25DC /* Interactor */,
+				B97976A32D01AAAF008A25DC /* Builder */,
+				B93636DE2D006B9400FF055C /* View */,
+				B93636E02D006D8300FF055C /* Presenter */,
+				B93636E62D00967600FF055C /* Storage */,
+				B95227142CFD337100140055 /* Services */,
+				B95227152CFD33B400140055 /* Models */,
 				B95227052CFD300300140055 /* Assets.xcassets */,
 				B95227072CFD300300140055 /* LaunchScreen.storyboard */,
 				B952270A2CFD300300140055 /* Info.plist */,
 			);
 			path = VkTask;
+			sourceTree = "<group>";
+		};
+		B95227142CFD337100140055 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B95227102CFD334E00140055 /* GitHubLoader.swift */,
+				B95227122CFD336700140055 /* NetworkClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B95227152CFD33B400140055 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B95227162CFD33F900140055 /* Owner.swift */,
+				B95227182CFD344000140055 /* Repository.swift */,
+				B952271B2CFD346F00140055 /* SearchResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B966C7642D01CA38005EA5A2 /* VkTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B966C7672D01CA38005EA5A2 /* VkTaskUITestsLaunchTests.swift */,
+			);
+			path = VkTaskUITests;
+			sourceTree = "<group>";
+		};
+		B97976A22D01AA8F008A25DC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B979769E2D01A059008A25DC /* RepositoriesInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B97976A32D01AAAF008A25DC /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B97976A02D01A108008A25DC /* RepositoriesBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		B9D96A362D01C9800000DE13 /* VkTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9D96A372D01C9800000DE13 /* VkTaskLoaderTests.swift */,
+				B9ECBA392D01CB230028BF4B /* VkTaskRepositoriesViewControllerTest.swift */,
+			);
+			path = VkTaskTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +230,42 @@
 			productReference = B95226F92CFD300100140055 /* VkTask.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B966C7622D01CA38005EA5A2 /* VkTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B966C76D2D01CA39005EA5A2 /* Build configuration list for PBXNativeTarget "VkTaskUITests" */;
+			buildPhases = (
+				B966C75F2D01CA38005EA5A2 /* Sources */,
+				B966C7602D01CA38005EA5A2 /* Frameworks */,
+				B966C7612D01CA38005EA5A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B966C76A2D01CA38005EA5A2 /* PBXTargetDependency */,
+			);
+			name = VkTaskUITests;
+			productName = VkTaskUITests;
+			productReference = B966C7632D01CA38005EA5A2 /* VkTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B9D96A342D01C9800000DE13 /* VkTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9D96A3B2D01C9800000DE13 /* Build configuration list for PBXNativeTarget "VkTaskTests" */;
+			buildPhases = (
+				B9D96A312D01C9800000DE13 /* Sources */,
+				B9D96A322D01C9800000DE13 /* Frameworks */,
+				B9D96A332D01C9800000DE13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9D96A3A2D01C9800000DE13 /* PBXTargetDependency */,
+			);
+			name = VkTaskTests;
+			productName = VkTaskTests;
+			productReference = B9D96A352D01C9800000DE13 /* VkTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +278,14 @@
 				TargetAttributes = {
 					B95226F82CFD300100140055 = {
 						CreatedOnToolsVersion = 15.1;
+					};
+					B966C7622D01CA38005EA5A2 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = B95226F82CFD300100140055;
+					};
+					B9D96A342D01C9800000DE13 = {
+						CreatedOnToolsVersion = 15.1;
+						TestTargetID = B95226F82CFD300100140055;
 					};
 				};
 			};
@@ -116,6 +303,8 @@
 			projectRoot = "";
 			targets = (
 				B95226F82CFD300100140055 /* VkTask */,
+				B9D96A342D01C9800000DE13 /* VkTaskTests */,
+				B966C7622D01CA38005EA5A2 /* VkTaskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,7 +316,20 @@
 			files = (
 				B95227092CFD300300140055 /* LaunchScreen.storyboard in Resources */,
 				B95227062CFD300300140055 /* Assets.xcassets in Resources */,
-				B95227042CFD300100140055 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B966C7612D01CA38005EA5A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D96A332D01C9800000DE13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +340,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B95227012CFD300100140055 /* ViewController.swift in Sources */,
+				B952271E2CFD3A4000140055 /* RepositoriesViewController + Cell.swift in Sources */,
+				B95227192CFD344000140055 /* Repository.swift in Sources */,
+				B95227012CFD300100140055 /* RepositoriesViewController.swift in Sources */,
+				B952271C2CFD346F00140055 /* SearchResult.swift in Sources */,
+				B97976A12D01A108008A25DC /* RepositoriesBuilder.swift in Sources */,
+				B95227132CFD336700140055 /* NetworkClient.swift in Sources */,
+				B93636E52D00966F00FF055C /* RepositoriesStorage.swift in Sources */,
+				B979769F2D01A059008A25DC /* RepositoriesInteractor.swift in Sources */,
 				B95226FD2CFD300100140055 /* AppDelegate.swift in Sources */,
+				B95227172CFD33F900140055 /* Owner.swift in Sources */,
 				B95226FF2CFD300100140055 /* SceneDelegate.swift in Sources */,
+				B95227112CFD334E00140055 /* GitHubLoader.swift in Sources */,
+				B93636E22D006DCC00FF055C /* RepositoriesPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B966C75F2D01CA38005EA5A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B966C7682D01CA38005EA5A2 /* VkTaskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D96A312D01C9800000DE13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9ECBA3A2D01CB230028BF4B /* VkTaskRepositoriesViewControllerTest.swift in Sources */,
+				B9D96A382D01C9800000DE13 /* VkTaskLoaderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		B95227022CFD300100140055 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B95227032CFD300100140055 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		B966C76A2D01CA38005EA5A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B95226F82CFD300100140055 /* VkTask */;
+			targetProxy = B966C7692D01CA38005EA5A2 /* PBXContainerItemProxy */;
 		};
+		B9D96A3A2D01C9800000DE13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B95226F82CFD300100140055 /* VkTask */;
+			targetProxy = B9D96A392D01C9800000DE13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		B95227072CFD300300140055 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -218,7 +452,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -297,7 +531,6 @@
 				INFOPLIST_FILE = VkTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +558,6 @@
 				INFOPLIST_FILE = VkTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,6 +570,80 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B966C76B2D01CA39005EA5A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8D8382YA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.vk.VkTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VkTask;
+			};
+			name = Debug;
+		};
+		B966C76C2D01CA39005EA5A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8D8382YA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.vk.VkTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VkTask;
+			};
+			name = Release;
+		};
+		B9D96A3C2D01C9800000DE13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8D8382YA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.vk.VkTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VkTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VkTask";
+			};
+			name = Debug;
+		};
+		B9D96A3D2D01C9800000DE13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X8D8382YA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ru.vk.VkTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VkTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VkTask";
 			};
 			name = Release;
 		};
@@ -358,6 +664,24 @@
 			buildConfigurations = (
 				B952270E2CFD300300140055 /* Debug */,
 				B952270F2CFD300300140055 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B966C76D2D01CA39005EA5A2 /* Build configuration list for PBXNativeTarget "VkTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B966C76B2D01CA39005EA5A2 /* Debug */,
+				B966C76C2D01CA39005EA5A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9D96A3B2D01C9800000DE13 /* Build configuration list for PBXNativeTarget "VkTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D96A3C2D01C9800000DE13 /* Debug */,
+				B9D96A3D2D01C9800000DE13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
